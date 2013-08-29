@@ -42,8 +42,8 @@ describe AriaApi::Configuration do
   end
 
   describe "self.api_version" do
-    it "returns 6.4 by default" do
-      conf.api_version.should == "6.4"
+    it "returns 6.12 by default" do
+      conf.api_version.should == "6.12"
     end
 
     it "can be overridden" do

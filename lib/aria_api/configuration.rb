@@ -23,7 +23,7 @@ module AriaApi
     end
 
     def self.api_version
-      @api_version ||= "6.4"
+      @api_version ||= "6.12"
     end
   end
 end
