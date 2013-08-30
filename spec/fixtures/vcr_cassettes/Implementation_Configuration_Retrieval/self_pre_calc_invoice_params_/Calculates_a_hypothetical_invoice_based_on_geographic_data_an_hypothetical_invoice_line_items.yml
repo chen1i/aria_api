@@ -4,7 +4,7 @@ http_interactions:
     method: post
     uri: https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: output_format=json&auth_key=8Vn848nuRPa58jht9jBBpWvSUVsn3fnB&client_no=4950701&rest_call=pre_calc_invoice
     headers: {}
   response:
@@ -13,21 +13,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 24 Apr 2012 14:46:40 GMT
+      - Fri, 30 Aug 2013 06:12:54 GMT
       Server:
       - Apache
       Content-Length:
-      - '68'
+      - '94'
       Content-Type:
       - application/json
-      Set-Cookie:
-      - citrix_ns_id=1N7/n5ofazZpFhZbwTIayzxofxoA0; Domain=.future.stage.ariasystems.net;
-        Path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '{"error_code":1016,"error_msg":"invalid input","inv_calc_out":null}
-
-'
+      encoding: UTF-8
+      string: |
+        {"error_code":1016,"error_msg":"invalid input","inv_calc_out":null,"third_party_errors":null}
     http_version: 
-  recorded_at: Tue, 24 Apr 2012 14:46:43 GMT
-recorded_with: VCR 2.0.0
+  recorded_at: Fri, 30 Aug 2013 06:12:55 GMT
+recorded_with: VCR 2.5.0

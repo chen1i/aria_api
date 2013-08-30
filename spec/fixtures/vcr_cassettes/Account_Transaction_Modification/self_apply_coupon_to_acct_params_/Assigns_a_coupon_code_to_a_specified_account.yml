@@ -4,7 +4,7 @@ http_interactions:
     method: post
     uri: https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: output_format=json&auth_key=8Vn848nuRPa58jht9jBBpWvSUVsn3fnB&client_no=4950701&rest_call=apply_coupon_to_acct&acct_no=1
     headers: {}
   response:
@@ -13,22 +13,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 24 Apr 2012 14:45:04 GMT
+      - Fri, 30 Aug 2013 06:08:12 GMT
       Server:
       - Apache
       Content-Length:
       - '81'
       Content-Type:
       - application/json
-      Set-Cookie:
-      - citrix_ns_id=x9IDuhS6ZMTQal8uS5QwFGyPeP0A0; Domain=.future.stage.ariasystems.net;
-        Path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '{"user_success_msg":null,"error_code":1009,"error_msg":"account does
-        not exist"}
-
-'
+      encoding: UTF-8
+      string: |
+        {"user_success_msg":null,"error_code":1009,"error_msg":"account does not exist"}
     http_version: 
-  recorded_at: Tue, 24 Apr 2012 14:45:06 GMT
-recorded_with: VCR 2.0.0
+  recorded_at: Fri, 30 Aug 2013 06:08:13 GMT
+recorded_with: VCR 2.5.0

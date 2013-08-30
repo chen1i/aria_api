@@ -4,7 +4,7 @@ http_interactions:
     method: post
     uri: https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: output_format=json&auth_key=8Vn848nuRPa58jht9jBBpWvSUVsn3fnB&client_no=4950701&rest_call=assign_supp_plan_multi&acct_no=1&supp_plan_no=1
     headers: {}
   response:
@@ -13,22 +13,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 24 Apr 2012 14:45:39 GMT
+      - Fri, 30 Aug 2013 06:09:42 GMT
       Server:
       - Apache
       Content-Length:
-      - '414'
+      - '752'
       Content-Type:
       - application/json
-      Set-Cookie:
-      - citrix_ns_id=h05IML8Os1dJlpOpBqs3cJudVf0A0; Domain=.future.stage.ariasystems.net;
-        Path=/; HttpOnly
     body:
-      encoding: US-ASCII
-      string: ! '{"error_code":1009,"proration_result_amount":null,"invoice_no":null,"collection_error_code":null,"collection_error_msg":null,"statement_error_code":null,"statement_error_msg":null,"proc_cvv_response":null,"proc_avs_response":null,"proc_cavv_response":null,"proc_status_code":null,"proc_status_text":null,"proc_payment_id":null,"proc_auth_code":null,"proc_merch_comments":null,"error_msg":"account
-        does not exist"}
-
-'
+      encoding: UTF-8
+      string: |
+        {"error_code":1009,"proration_result_amount":null,"invoice_no":null,"multi_sp_invoice_line_items":null,"collection_error_code":null,"collection_error_msg":null,"statement_error_code":null,"statement_error_msg":null,"proc_cvv_response":null,"proc_avs_response":null,"proc_cavv_response":null,"proc_status_code":null,"proc_status_text":null,"proc_payment_id":null,"proc_auth_code":null,"proc_merch_comments":null,"total_charges_before_tax":null,"total_tax_charges":null,"total_charges_after_tax":null,"total_credit":null,"total_tax_credit":null,"total_credit_before_tax":null,"total":null,"expectd_activation_fee":null,"expectd_mthly_recurring_cost":null,"expectd_annu_recurring_cost":null,"third_party_errors":null,"error_msg":"account does not exist"}
     http_version: 
-  recorded_at: Tue, 24 Apr 2012 14:45:41 GMT
-recorded_with: VCR 2.0.0
+  recorded_at: Fri, 30 Aug 2013 06:09:43 GMT
+recorded_with: VCR 2.5.0
